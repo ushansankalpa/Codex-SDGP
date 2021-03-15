@@ -1,76 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import React , { useState, useEffect ,PureComponent} from 'react';
-import { StyleSheet, Text, View ,Button,FlatButton,TouchableOpacity} from 'react-native';
-import Header from './components/header';
+//This is an example code for Navigator// 
+import React, { Component } from 'react';
+//import react in our code. 
 
+//Import react-navigation
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator} from 'react-navigation-stack';
 
-
-
-
-export default function App() {
-
-
-  return (
-    <View style={styles.container}>
-      <Header/>
-
-      <View style={styles.buttonContainer}> 
-      
-        
-        <Button
-          title="Live Video"
-          type="outline"
-          
-        />        
-        
-      </View> 
-
-      <View style={styles.buttonContainer}>  
-        <Button
-          title="Upload Video"
-          type="outline"
-        />  
-      </View> 
-
-      <View style={styles.buttonContainer}>  
-        <Button
-          title="Sign Dictionary"
-          type="outline"
-        />  
-      </View> 
-
-      <View style={styles.buttonContainer}>  
-      <Button
-          title="Help"
-          type="outline"
-        /> 
-      </View> 
-      
-       
-    </View>
-  );
-}
-
-
-
-
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    
+import FirstPage from './pages/FirstPage';
+import FourthPage from './pages/FourthPage';
+import SecondPage from './pages/SecondPage';
+import ThirdPage from './pages/ThirdPage';
+const App = createStackNavigator({
+    FirstPage: { screen: FirstPage }, 
+    SecondPage: { screen: SecondPage }, 
+    ThirdPage:{screen:ThirdPage},
+    FourthPage:{screen:FourthPage},
     
   },
-
-  content:{
-    padding:40,
-  },
-
-  buttonContainer:{
-    marginTop:50,
-    margin:10,
-    
+  {
+    initialRouteName: 'FirstPage',
   }
-
-});
+);
+export default createAppContainer(App);
