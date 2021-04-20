@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Help</title>
+	<meta charset='UTF-8'>
+	<style>
+
+
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	background:url({{url_for('static',filename= 'images/back2.jpg')}}) no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+.back{
+	position:fixed;
+	bottom:20px;
+	right:2%;
+	z-index:59;
+	text-decoration:none;
+	color:white;
+	background-color:black;
+}
+
+.navbar{
+	height:70px;
+	width:100%;
+	background:rgba(39, 36, 22, 0.46);
+
+}
+.navbar ul{
+	float:right;
+	margin-right:20px;
+}
+.navbar ul li{
+	margin:20px;
+	display:inline-block;
+	line-height:30px;
+
+}
+.navbar ul li a{
+	padding:15px;
+	color:white;
+	font-size:20px;
+	font-family:Arial;
+	text-decoration:none;
+	border-radius:30px;
+
+}
+.navbar ul li a:hover{
+	color:black;
+	background-color:white;
+}
+.mainbox1{
+	background-color:black;
+	font-weight:bold;
+	color:white;
+	position:absolute;
+	font-size:20px;
+	top:240px;
+	Right:14%;
+	font-family:Arial;
+	mix-blend-mode:screen;
+}
+
+.articles{
+  position: absolute;
+  top: 130px;
+  left: 150px;
+  width: 80%;
+  height: 670px;
+  background-color: white;
+  opacity: 0.9;
+}
+
+.articletopic{
+  font-family: 'Open Sans', sans-serif;
+  position: absolute;
+  top: 65px;
+  left: 580px;
+  font-size:
+}
+
+.description{
+  position: absolute;
+  width:90%;
+  height: 430px;
+  top: 120px;
+  left:40px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer{
+	position:absolute;
+	height:400px;
+	width:100%;
+	top:820px;
+	background-color:white;
+}
+
+.footer1{
+	position:absolute;
+	height:150px;
+	width:200px;
+	left:300px;
+	top:50px;
+}
+.footer1 a{
+	font-family:Arial;
+	font-size:15px;
+	text-decoration:none;
+	color:black;
+}
+.footer1 h1{
+	font-size:20px;
+}
+.footer2{
+	position:absolute;
+	height:150px;
+	width:300px;
+	left:700px;
+	top:52px;
+}
+.footer2 p{
+	font-family:Arial;
+	font-size:15px;
+	text-decoration:none;
+	color:black;
+}
+.footer2 h1{
+	font-size:20px;
+}
+.footer3 h1{
+	font-size:20px;
+	top:254px;
+	position:absolute;
+	left:700px;
+}
+
+
+.fb{
+	height:58px;
+	width:60px;
+	top:240px;
+	position:absolute;
+}
+.insta{
+	height:56px;
+	width:55px;
+	top:242px;
+	left:80px;
+	position:absolute;
+}
+.page-editor{
+	position:absolute;
+	height:150px;
+	width:300px;
+	left:1100px;
+	top:250px;
+}
+.page-editor a{
+	font-size:15px;
+	text-decoration:none;
+	color:black;
+	font-family:sans-serif;
+}
+
+	</style>
+</head>
+<a name="top"></a>
+<body>
+<div class ="top">
+	<a class ="back" href="#top" src>Back to Top</a>
+	</div>
+		<nav class="navbar">
+
+			<ul>
+				<li><a href="/" id="Button">Home</a></li>
+				<li><a href="live_feed">Live Video</a></li>
+				<li><a href="video_translate">Sign Dictionary</a></li>
+				<li><a href="help">Help</a></li>
+
+
+			</ul>
+			</nav>
+
+	<div class="articles">
+    	<div class="articletopic">
+    		<h1>Help</h1>
+    	</div>
+
+    <div class="description">
+	<br>
+      <p>
+      		Sign Master is a American Sign Language translator web application for users who's in need of understanding American Sign Language. Sign Master provides following features to it's users.<br><br><br>
+
+    		<h3>1) Live Video</h3> <br>
+
+    			User can choose this option to translate a live video from the camera feed<br><br><br>
+
+    		<h3>2) Upload Video</h3> <br>
+
+    			User can choose this option to upload a video from the user's media storage and translate<br><br><br>
+
+    		<h3>3) Sign Dictionar</h3> <br>
+
+    			Users who's in need to learn American Sign Language can choose this option to learn basic alphabetical signs<br><br></p>
+    </div>
+		</div>
+<div class="footer">
+
+	<div class="footer1">
+		<h1>Explore</h1></br>
+		<a href="/">Home</a><br>
+		<a href="live_feed">Live Video</a><br>
+		<a href="video_translate">Sign Dictionary</a><br>
+		<a href="help">Help</a><br>
+
+
+
+	</div>
+	<div class="footer2">
+
+
+			<a style="display:block" href="https://www.facebook.com/">
+			<img src=".\static\images\fb.jpg" alt="facebook" class="fb">
+			</a>
+			<a style="display:block" href="https://www.instagram.com/">
+			<img src=".\static\images\insta.jpg" alt="instagram" class="insta">
+			</a>
+	</div>
+	<div class="footer3">
+			<h1>Find Us on</h1>
+			</div>
+		<div class="page-editor">
+		<a href=""><b>Done by CodeX<br>
+				</b></a>
+		</div>
+</div>
+</body>
+</html>
+

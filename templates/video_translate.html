@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+
+
+
+
+<style>
+*{
+	padding:0;
+	margin:0;
+}
+
+body{
+	background:url({{url_for('static',filename= 'images/back2.jpg')}}) no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+.back{
+	position:fixed;
+	bottom:20px;
+	right:2%;
+	z-index:59;
+	text-decoration:none;
+	color:white;
+	background-color:black;
+}
+
+.navbar{
+	height:70px;
+	width:100%;
+	background:rgba(39, 36, 22, 0.46);
+
+}
+.navbar ul{
+	float:right;
+	margin-right:20px;
+}
+.navbar ul li{
+	margin:20px;
+	display:inline-block;
+	line-height:30px;
+
+}
+.navbar ul li a{
+	padding:15px;
+	color:white;
+	font-size:20px;
+	font-family:Arial;
+	text-decoration:none;
+	border-radius:30px;
+
+}
+.navbar ul li a:hover{
+	color:black;
+	background-color:white;
+}
+.mainbox1{
+	background-color:black;
+	font-weight:bold;
+	color:white;
+	position:absolute;
+	font-size:20px;
+	top:240px;
+	Right:14%;
+	font-family:Arial;
+	mix-blend-mode:screen;
+}
+
+.column {
+  float: left;
+  width: 430px;
+  padding: 5px;
+  margin-left:50px;
+  text-align:center;
+  color: white;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+img {
+  border: 5px solid #555;
+  }
+h1{
+  text-align:center;
+  color:black;
+  margin-left:640px;
+  }
+
+.headder{
+  position: "center";
+}
+
+.footer{
+	position:absolute;
+	height:400px;
+	width:100%;
+	top:2870px;
+	background-color:white;
+}
+
+.footer1{
+	position:absolute;
+	height:150px;
+	width:200px;
+	left:300px;
+	top:50px;
+}
+.footer1 a{
+	font-family:Arial;
+	font-size:15px;
+	text-decoration:none;
+	color:black;
+}
+.footer1 h1{
+	font-size:20px;
+}
+.footer2{
+	position:absolute;
+	height:150px;
+	width:300px;
+	left:700px;
+	top:52px;
+}
+.footer2 p{
+	font-family:Arial;
+	font-size:15px;
+	text-decoration:none;
+	color:black;
+}
+.footer2 h1{
+	font-size:20px;
+}
+.footer3 h1{
+	font-size:20px;
+	top:254px;
+	position:absolute;
+	left:700px;
+}
+
+
+.fb{
+	height:58px;
+	width:60px;
+	top:240px;
+	position:absolute;
+}
+.insta{
+	height:56px;
+	width:55px;
+	top:242px;
+	left:80px;
+	position:absolute;
+}
+.page-editor{
+	position:absolute;
+	height:150px;
+	width:300px;
+	left:1100px;
+	top:250px;
+}
+.page-editor a{
+	font-size:15px;
+	text-decoration:none;
+	color:black;
+	font-family:sans-serif;
+}
+
+</style>
+</head>
+<body style="background-color:LightGray">
+  <nav class="navbar">
+
+      <ul>
+				<li><a href="/" id="Button">Home</a></li>
+				<li><a href="live_feed">Live Video</a></li>
+				<li><a href="video_translate">Sign Dictionary</a></li>
+				<li><a href="help">Help</a></li>
+
+
+			</ul>
+      </nav>
+
+ <div class="headder">
+   <h1> Sign Dictionary </h1>
+ </div>
+<div class="row">
+  <div class="column">
+
+    <img src="{{url_for('static',filename= 'images/a.png')}}"  alt="Snow" width="200" height="250"><br>
+	 <p style="font-size: 22px " > <b> A </b> </p>
+	</div>
+
+  <div class="column">
+    <img src="{{url_for('static',filename= 'images/b.png')}}" alt="Forest" width="200" height="250">
+	<p style="font-size: 22px"> <b> B </b> </p>
+  </div>
+
+  <div class="column">
+    <img src="{{url_for('static',filename= 'images/c.jpg')}}" alt="Mountains" width="200" height="250">
+	<p style="font-size: 22px"> <b> C </b> </p>
+  </div>
+
+</div>
+<div class="row">
+  <div class="column">
+    <img src="{{url_for('static',filename= 'images/d.png')}}" alt="Snow" width="200" height="250">
+	<p style="font-size: 22px"> <b> D </b> </p>
+  </div>
+  <div class="column">
+    <img src="{{url_for('static',filename= 'images/e.png')}}" alt="Forest" width="200" height="250">
+	<p style="font-size: 22px"> <b> E </b> </p>
+  </div>
+  <div class="column">
+    <img src="{{url_for('static',filename= 'images/f.jpg')}}" alt="Mountains" width="200" height="250">
+	<p style="font-size: 22px"> <b> F </b> </p>
+  </div>
+
+</div>
+<div class="row">
+  <div class="column">
+    <img src="{{url_for('static',filename= 'images/g.png')}}" alt="Snow" width="200" height="250">
+	<p style="font-size: 22px"> <b> G </b> </p>
+  </div>
+  <div class="column">
+    <img src="{{url_for('static',filename= 'images/h.png')}}" alt="Forest" width="200" height="250">
+	<p style="font-size: 22px"> <b> H </b> </p>
+  </div>
+  <div class="column">
+    <img src="{{url_for('static',filename= 'images/i.png')}}" alt="Mountains" width="200" height="250">
+	<p style="font-size: 22px"> <b> I </b> </p>
+  </div>
+
+</div>
+<div class="row">
+  <div class="column">
+    <img src="{{url_for('static',filename= 'images/j.png')}}" alt="Snow" width="200" height="250">
+	<p style="font-size: 22px"> <b> J </b> </p>
+  </div>
+  <div class="column">
+    <img src="{{url_for('static',filename= 'images/k.jpg')}}" alt="Forest" width="200" height="250">
+	<p style="font-size: 22px"> <b> K </b> </p>
+  </div>
+  <div class="column">
+    <img src="{{url_for('static',filename= 'images/l.png')}}" alt="Mountains" width="200" height="250">
+	<p style="font-size: 22px"> <b> L </b> </p>
+  </div>
+
+</div>
+<div class="row">
+  <div class="column">
+    <img src="{{url_for('static',filename= 'images/m.png')}}" alt="Snow" width="200" height="250">
+	<<p style="font-size: 22px"> <b> M </b> </p>
+  </div>
+  <div class="column">
+    <img src="{{url_for('static',filename= 'images/n.png')}}" alt="Forest" width="200" height="250">
+	<p style="font-size: 22px"> <b> N </b> </p>
+  </div>
+  <div class="column">
+    <img src="{{url_for('static',filename= 'images/o.png')}}" alt="Mountains" width="200" height="250">
+	<p style="font-size: 22px"> <b> O </b> </p>
+  </div>
+
+</div>
+<div class="row">
+  <div class="column">
+    <img src="{{url_for('static',filename= 'images/p.png')}}" alt="Snow" width="200" height="250">
+	<p style="font-size: 22px"> <b> P </b> </p>
+  </div>
+  <div class="column">
+    <img src="{{url_for('static',filename= 'images/q.jpg')}}" alt="Forest" width="200" height="250">
+	<p style="font-size: 22px"> <b> Q </b> </p>
+  </div>
+  <div class="column">
+    <img src="{{url_for('static',filename= 'images/r.png')}}" alt="Mountains" width="200" height="250">
+	<p style="font-size: 22px"> <b> R </b> </p>
+  </div>
+
+</div>
+<div class="row">
+  <div class="column">
+    <img src="{{url_for('static',filename= 'images/s.png')}}" alt="Snow" width="200" height="250">
+	<p style="font-size: 22px"> <b> S </b> </p>
+  </div>
+  <div class="column">
+    <img src="{{url_for('static',filename= 'images/t.png')}}" alt="Forest" width="200" height="250">
+	<p style="font-size: 22px"> <b> T </b> </p>
+  </div>
+  <div class="column">
+    <img src="{{url_for('static',filename= 'images/u.png')}}" alt="Mountains" width="200" height="250">
+	<p style="font-size: 22px"> <b> U </b> </p>
+  </div>
+
+</div>
+<div class="row">
+  <div class="column">
+    <img src="{{url_for('static',filename= 'images/v.jpg')}}" alt="Snow" width="200" height="250">
+	<p style="font-size: 22px"> <b> V </b> </p>
+  </div>
+  <div class="column">
+    <img src="{{url_for('static',filename= 'images/w.png')}}" alt="Forest" width="200" height="250">
+	<p style="font-size: 22px"> <b> W </b> </p>
+  </div>
+  <div class="column">
+    <img src="{{url_for('static',filename= 'images/x.png')}}" alt="Mountains" width="200" height="250">
+	<p style="font-size: 22px"> <b> X </b> </p>
+  </div>
+
+</div>
+
+  <div class="row">
+  <div class="column">
+    <img src="{{url_for('static',filename= 'images/y.png')}}" alt="Snow" width="200" height="250">
+	<p style="font-size: 22px"> <b> y </b> </p>
+  </div>
+  <div class="column">
+    <img src="{{url_for('static',filename= 'images/z.png')}}" alt="Forest" width="200" height="250">
+	<p style="font-size: 22px"> <b> z </b> </p>
+  </div>
+
+
+</div>
+
+
+
+
+
+</div>
+<div class="footer">
+
+	<div class="footer1">
+		<h1>Explore</h1></br>
+		<a href="/">Home</a><br>
+		<a href="live_feed">Live Video</a><br>
+		<a href="video_translate">Sign Dictionary</a><br>
+		<a href="help">Help</a><br>
+
+
+
+	</div>
+	<div class="footer2">
+			<a style="display:block" href="https://www.facebook.com/">
+			<img src=".\static\images\fb.jpg" alt="facebook" class="fb" style="border: 0">
+			</a>
+			<a style="display:block" href="https://www.instagram.com/">
+			<img src=".\static\images\insta.jpg" alt="instagram" class="insta" style="border: 0">
+			</a>
+	</div>
+	<div class="footer3">
+			<h1>Find Us on</h1>
+			</div>
+		<div class="page-editor">
+		<a href=""><b>Done by CodeX<br>
+				</b></a>
+		</div>
+</div>
+</body>
+</html>
