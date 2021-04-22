@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Main Page</title>
+	<meta charset='UTF-8'>
+	<!--<link rel="Stylesheet" href="css/style.css">!-->
+	<style>
+		*{
+	padding:0;
+	margin:0;
+}
+body{
+	background:url({{url_for('static',filename= 'images/back2.jpg')}}) no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+.back{
+	position:fixed;
+	bottom:20px;
+	right:2%;
+	z-index:59;
+	text-decoration:none;
+	color:white;
+	background-color:black;
+}	
+	
+
+
+
+.navbar{
+	height:70px;
+	width:100%;
+	background:rgba(39, 36, 22, 0.46);
+	
+}
+.navbar ul{
+	float:right;
+	margin-right:20px;
+}
+.navbar ul li{
+	margin:20px;
+	display:inline-block;
+	line-height:30px;
+
+}
+.navbar ul li a{
+	padding:15px;
+	color:white;
+	font-size:20px;
+	font-family:Arial;
+	text-decoration:none;
+	border-radius:30px;
+
+}
+.navbar ul li a:hover{
+	color:black;
+	background-color:white;
+}
+.mainbox1{
+	background-color:black;
+	font-weight:bold;
+	color:white;
+	position:absolute;
+	font-size:20px;
+	top:240px;
+	Right:14%;
+	background:rgba(39, 36, 25, 0.76);
+	font-family:Arial;
+}
+
+.mainbox{
+	height:120px;
+	width:100%;
+	background:rgba(39, 36, 25, 0.76);
+	position:absolute;
+	top:790px;
+	display:inline-block;
+
+
+	color:white;
+	
+}
+
+.img{
+	height:500px;
+	width:600px;
+}
+.box1{
+	position:absolute;
+	text-align: center;
+	color:#082f49;
+	top:70px;
+	right:79%;
+	width:200px;
+	height:400px;
+	transition:1s;
+}
+.Flute {
+	font-family:Arial;
+	font-size:20px;
+	color:white;
+}
+.box1:hover{
+	transform:scale(1.1);
+}
+.box2{
+	position: absolute;
+	text-align: center;
+	color:#082f49;
+	top:70px;
+	left:53%;
+	width:200px;
+	height:400px;
+	transition:1s;
+}
+.Guitar{
+	font-family:Arial;
+	font-size:20px;
+	color:white;
+	
+}
+.box2:hover{
+	transform:scale(1.1);
+}
+.box3{
+	position: absolute;
+	text-align: center;
+	color:#082f49;
+	top:630px;
+	right:79%;
+	width:200px;
+	height:400px;
+	transition:1s;
+}
+.Drum{
+	font-family:Arial;
+	font-size:20px;
+	color:white;
+	
+}
+.box3:hover{
+	transform:scale(1.1);
+}
+.box4{
+	position: absolute;
+	text-align: center;
+	color:#082f49;
+	top:630px;
+	left:53%;
+	width:200px;
+	height:400px;
+	transition:1s;
+}
+.Piano{
+	font-family:Arial;
+	font-size:20px;
+	color:white;
+	
+}
+.box4:hover{
+	transform:scale(1.1);
+}
+.mainbox3{
+	background-color:gray;
+	font-family:Arial;
+	color:white;
+	font-size:20px;
+	text-align:center;
+	top:920px;
+	width:100%;
+	height:500px;
+	position:absolute;
+}
+.img3{
+	height:200px;
+	width:220px;
+	border-radius:50%;
+}
+.mb1{
+	position:absolute;
+	top:100px;
+	right:30%;
+	left:30%;
+}
+.mb2{
+	position:absolute;
+	top:100px;
+	right:55%;
+}
+.mb3{
+	position:absolute;
+	top:100px;
+	right:30%;
+}
+.mb4{
+	position:absolute;
+	top:100px;
+	right:6%;
+}
+
+.footer{
+	position:absolute;
+	height:400px;
+	width:100%;
+	top:1420px;
+	background-color:white;
+}
+
+
+.footerHelp{
+	position:absolute;
+	height:400px;
+	width:100%;
+	top:690px;
+	background-color:white;
+}
+
+.footer1{
+	position:absolute;
+	height:150px;
+	width:200px;
+	left:300px;
+	top:50px;
+}
+.footer1 a{
+	font-family:Arial;
+	font-size:15px;
+	text-decoration:none;
+	color:black;
+}
+.footer1 h1{
+	font-size:20px;
+}
+.footer2{
+	position:absolute;
+	height:150px;
+	width:300px;
+	left:700px;
+	top:52px;
+}
+.footer2 p{
+	font-family:Arial;
+	font-size:15px;
+	text-decoration:none;
+	color:black;
+}
+.footer2 h1{
+	font-size:20px;
+}
+.footer3 h1{
+	font-size:20px;
+	top:254px;
+	position:absolute;
+	left:700px;
+}
+
+
+.fb{
+	height:58px;
+	width:60px;
+	top:240px;
+	position:absolute;
+}
+.insta{
+	height:56px;
+	width:55px;
+	top:242px;
+	left:80px;
+	position:absolute;
+}
+.page-editor{
+	position:absolute;
+	height:150px;
+	width:300px;
+	left:1100px;
+	top:250px;
+}
+.page-editor a{
+	font-size:15px;
+	text-decoration:none;
+	color:black;
+	font-family:sans-serif;
+}	
+	
+	</style>
+</head>
+<a name="top"></a>
+<body>
+	<div class ="top">
+	<a class ="back" href="#top" src>Back to Top</a>
+	</div>
+		<nav class="navbar">
+			
+			<ul>
+				<li><a href="/" id="Button">Home</a></li>
+				<li><a href="live_feed">Live Video</a></li>
+				<li><a href="video_translate">Sign Dictionary</a></li>
+				<li><a href="help">Help</a></li>
+				
+				
+			</ul>
+			</nav>
+	<div class="mainbox1">
+		<h2>SIGN MASTER<br></h2>
+		<h1>Sign Language<br></h1>
+		<p><br>The sign languages used by deaf communities around the world represent a linguistic challenge <br>
+		that natural language researchers have only recently begun to take up.<br>
+		</p>
+		</div>
+		
+		
+	<div class="mainbox">
+
+		There is a strong tendency among the speaking
+community to trivialise the capacity of sign as a full
+communication medium. It is a common assumption
+that sign language, being iconic in nature, is a universal
+language shared by the deaf communities of the world.
+In fact countries which share the same spoken language
+(e.g. English in the cases of Britain, Ireland and
+America) do not necessarily employ the same form of
+sign ( BSL, ISL and ASL respectively). Certainly
+iconicity plays a stronger role in sign language than
+sound symbolism does in spoken language but, as with
+any language, there is a strong tendency to move from
+iconicity to arbitrariness (see Klima & Bellugi 1979).
+		
+	</div>
+<div class="mainbox3">
+<h2>Value of Sign master</h2>
+
+
+
+	<div class="mb1">
+		The fluid articulation of animated sign language
+		from English in'put represents a unique linguistic
+		challenge of cross-modal translation. There is a sizeable
+		body of sign language users world-wide, for whom such
+		technology can provide valuable tools for education and
+		informatiort access. From a linguistic perspective, the
+		pursuit of cross-modal translation poses new problems
+		in translation and generation, and forces us to question
+		our conceptions of language universals.
+
+	</div>
+</div>
+<div class="footer">
+	
+	<div class="footer1">
+		<h1>Explore</h1></br>
+		<a href="/">Home</a><br>
+		<a href="live_feed">Live Video</a><br>
+		<a href="video_translate">Sign Dictionary</a><br>
+		<a href="help">Help</a><br>
+		
+		
+	
+	</div>
+	<div class="footer2">
+
+			<a style="display:block" href="https://www.facebook.com/">
+			<img src=".\static\images\fb.jpg" alt="facebook" class="fb">
+			</a>
+			<a style="display:block" href="https://www.instagram.com/">
+			<img src=".\static\images\insta.jpg" alt="instagram" class="insta">
+			</a>
+	</div>
+	<div class="footer3">
+			<h1>Find Us on</h1>
+			</div>
+		<div class="page-editor">
+		<a href=""><b>Done by CodeX<br>
+				</b></a>
+		</div>
+</div>
+</body>
+</html>
+		
